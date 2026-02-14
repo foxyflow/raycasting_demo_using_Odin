@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Odin Game",
+            "type": "cppvsdbg", 
+            "request": "launch",
+            "program": "E:\\clionOdinGame\\bin\\puzzle.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "E:\\clionOdinGame",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "Build Odin"
+        }
+    ]
+}
