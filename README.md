@@ -6,6 +6,7 @@ The goal was to make lock puzzles when at doors.
 Press spacebar at door and secret door (you'll see them in the room you start at)
 WASD and mouse/arrow keys for movement.
 
-![alt text](readme-image.png)
+![alt text](image.png)
+image.png 
 
 
