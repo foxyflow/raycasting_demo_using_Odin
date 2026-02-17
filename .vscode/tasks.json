@@ -4,7 +4,7 @@
         {
             "label": "Build Odin",
             "type": "shell",
-            "command": "odin build E:\\clionOdinGame\\src -debug -out:E:\\clionOdinGame\\bin\\puzzle.exe",
+            "command": "odin build ${workspaceFolder}\\src -debug -out:${workspaceFolder}\\game.exe", //"command": "odin build ${workspaceFolder}\\src -out:${workspaceFolder}\\game.exe", for no -debug file -- release build.
             "group": {
                 "kind": "build",
                 "isDefault": true

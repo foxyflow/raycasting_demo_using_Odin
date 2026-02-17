@@ -326,7 +326,7 @@ main :: proc()
                                 // We use the DISP (displacement/cracks) map as the main texture.
                                 // We tint it so it's mostly transparent, leaving only the faint outlines.
                                 rl.BeginBlendMode(.MULTIPLIED)
-                                    rl.DrawTexturePro(textures.stone_pathway_disp, src_rec, dst_rec, {0,0}, 0, rl.Color{0, 0, 0, 255})
+                                    rl.DrawTexturePro(textures.stone_pathway_disp, src_rec, dst_rec, {0,0}, 0, rl.Color{0, 0, 0, 144}) // play around with alpha for darker floor. 128 is quite nice.
                                    // rl.DrawRectangle(0, horizon, GAME_WIDTH, GAME_HEIGHT, rl.Color{20, 20, 25, 40})
                                 rl.EndBlendMode()
                             }
@@ -889,7 +889,7 @@ draw_floor_rowcast_dda :: proc(textures: ^GameTextures, player_pos: rl.Vector2, 
             // test_color := rl.Color{u8(row_dist * 20), 40, 30, 255} 
             // rl.DrawLine(0, y, GAME_WIDTH, y, test_color)
             
-            // Note: In real Odin/Raylib, you'd write this to a pixel buffer 
+            // Note: Odin/Raylib, you'd write this to a pixel buffer 
             // because rl.DrawPixel 320,000 times per frame is slow.
         }
     }
